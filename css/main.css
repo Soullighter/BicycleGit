@@ -1,0 +1,822 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+ul,
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #848789;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+h1, h2, nav ul li {
+  color: #353738;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto;
+}
+h1 {
+  margin: 0;
+}
+h2, h3 {
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  color: #4d4959;
+}
+img {
+  width: 100%
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+/*----- section general style
+-------------------------------------------------------------------------*/
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.box-left {
+  float: left;
+  width: 50%;
+}
+.box-right {
+  float: right;
+  width: 50%;
+}
+.shop ul li.box-fix {
+  width: 100%;
+}
+.shop ul li {
+  float: left;
+  width: 50%;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+/*----- section top
+-------------------------------------------------------------------------*/
+nav {
+  background-color: #f4f5fc;
+  width: 100%;
+  height: 40px;
+}
+.bg {
+  width: 100%;
+}
+.logo {
+  margin: 10px;
+  width: 94px;
+  margin: 0 auto 20px;
+}
+.logo img {
+  margin-top: 20px;
+}
+nav ul li {
+	font-size: 13px;
+}
+.dot {
+  display: none;
+}
+.menu {
+  display: none;
+  float: right;
+}
+.menu a:hover {
+  color: #64c29e;
+}
+.burger {
+  cursor:pointer;
+  width: 70px;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+}
+.burger:after {
+  content: "MENU";
+  position: absolute;
+  top: -7px;
+  left: 17px;
+  font-size: 18px;
+  color: #4d4959;
+}
+.hamburger {
+  width: 14px;
+  height: 2px;
+  background-color: #4d4959;
+  margin-top: 3px;
+  border-radius: 10px;
+}
+.sec-top {
+  background-color: #f7f7f7;
+}
+.sec-top ul {
+  list-style:none;
+  width:100%;
+  padding:0;
+  margin-top: 25px;
+  background-color: #f4f5fc;
+}
+.sec-top li {
+  text-align:center;
+  padding:10px;
+  transition: all .1s ease;
+  margin-top: 10px;
+}
+/*--------- Generation
+------------------------------------------------------*/
+.icon-generation {
+  background: url('../img/generation.png') no-repeat center;
+  display: block;
+  margin: 0 auto 15px;
+  width: 52px;
+  height: 43px;
+}
+.generation .container div{
+  background: #f7f7f7;
+  padding: 20px;
+}
+/*--------- Icons
+------------------------------------------------------*/
+.icon {
+  background: url('../img/icon.png') no-repeat center;
+  display: block;
+  width: 41px;
+  height: 32px;
+}
+.icon-vintage {
+  background-position: 0 -6px;
+}
+.icon-boriosa {
+  background-position: -43px -5px;
+}
+.icon-retro {
+  background-position: -84px 0;
+}
+.vintage .icon,
+.boriosa .icon,
+.retro .icon {
+  display: block;
+  margin: 0 auto 15px;
+}
+/*----- section vintage
+-------------------------------------------------------------------------*/
+.article li,
+.shop-images li {
+  position: relative;
+  display: block;
+}
+.article li img {
+  display: block;
+  width: 100%;
+}
+.article li .link-ovarlay,
+.shop-images li .shop-ovarlay {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.article li .link-ovarlay:hover {
+  background-color: rgba(100, 194, 158, 0.8);
+  transition: background-color 0.5s ease-out;
+}
+.article li.description div{
+  background: #fff;
+  padding: 20px;
+}
+.bubble {
+  position: relative;
+}
+.bubble:after {
+    content: '';
+    position: absolute;
+    border: 1px solid rgba(51, 51, 51, 0.19)
+}
+.bottom:after {
+    border-color: white transparent;
+    border-width: 12px 13px 0 13px;
+    bottom: -9px;
+    left: 48%;
+}
+.vintage li.description h2 {
+  text-align: center;
+}
+.article li.description p {
+  text-align: left;
+}
+.fancy-line span {
+  display: inline-block;
+}
+.fancy-line span:after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid #d7d7d7;
+  width: 50px;
+  left: 45%;
+}
+/*-----  view01
+--------------------------------*/
+.vintage li.cover .link-ovarlay {
+  background-image: url('../img/pic logo/bicycle_company.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*----- section boriosa
+-------------------------------------------------------------------------*/
+.boriosa li.cover .link-ovarlay {
+  background-image: url('../img/pic logo/bicycles.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*----- section retro
+-------------------------------------------------------------------------*/
+.retro li.cover .link-ovarlay {
+  background-image: url('../img/pic logo/vintage.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*----- section flex-slider
+-------------------------------------------------------------------------*/
+.generation .container div{
+  margin: 0 10px;
+}
+.flex-twitter-icon {
+width: 32px;
+height: 27px;
+background: url(../img/twitter.png) no-repeat center center;
+margin: 0 auto;
+}
+.twitter-username {
+  color: #353738;
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+span {
+  color: #848789;
+  font-weight: 300;
+}
+.twitter-post {
+  color: #848789;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+/*----- section shop
+-------------------------------------------------------------------------*/
+.shop-images li .shop-ovarlay:hover {
+  background-image: url('../img/hover.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(100, 194, 158, 0.8);
+  transition: background-color 0.5s ease-out;
+}
+.btn-shop-container {
+  background-color: #282f35;
+  padding: 70px 0;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn svg {
+  position: absolute;
+  top: 0; left: 0;
+}
+.btn svg rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-dasharray: 700, 0;
+  -webkit-transition: all 1300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1300ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn:hover svg rect {
+  stroke-width: 5;
+  stroke-dasharray: 20, 500;
+  stroke-dashoffset: 33;
+  stroke: #64c29e;
+}
+
+.btn:hover {
+  color:#64c29e;
+  font-size:15px;
+  letter-spacing:1px;
+  font-weight:bold;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .4s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  -moz-transition-property: all;
+  -moz-transition-duration: .4s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+
+/*----- section subscribe
+-------------------------------------------------------------------------*/
+.subscribe img {
+  width: 94px;
+  height: 85px;
+  margin-top: 30px;
+}
+.subscribe p {
+  font-size: 24px;
+}
+.input-text {
+  border: solid 1px #d3d7d9;
+  padding: 23px;
+  color: #929292;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.submit-button {
+  background-color: #64c29e;
+  color: #fff;
+  border: solid 1px #64c29e;
+  padding: 23px 30px;
+  margin-bottom: 15px;
+}
+.submit-button:hover {
+  background-color: #55a385;
+  color: #fff;
+}
+.input-text:focus,
+.submit-button:focus {
+  outline-style: none;
+  border-color: #64c29e;
+}
+@media only screen and (min-width:480px) {
+  .submit-button {
+  margin: 0 0 0 5px;
+}
+
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:990px) {
+#nav-wrap {
+  width: 100%;
+  left: 0;
+  background-color: #f4f5fc;
+  height: 120px;
+}
+.burger {
+  display: none;
+}
+.menu {
+  display: block;
+  margin-top: 43px;
+}
+.menu li {
+  display: inline;
+}
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -42px;
+}
+.sec-top ul {
+  margin-top: 55px;
+}
+.push {
+  margin-right: 170px;
+}
+.vintage .icon,
+.boriosa .icon,
+.retro .icon,
+.generation h2 i {
+  display: block;
+  margin: 0 auto 30px;
+}
+.generation p {
+  margin: 20px auto 0;
+  max-width: 1080px;
+}
+p {
+  margin-top: 20px;
+}
+.vintage,
+.boriosa,
+.retro {
+  position: relative;
+}
+.vintage .description {
+  float: right;
+  width: 33.333%;
+}
+.vintage .cover {
+  float: left;
+  width: 66.666%;
+  position: absolute;
+  top: 0;
+  right: 33.333%;
+  bottom: 0;
+  left: 0;
+}
+.cover img {
+  height: 100%;
+  object-fit: cover;
+}
+.boriosa .description {
+  float: left;
+  width: 33.333%;
+}
+.boriosa .cover {
+  float: right;
+  width: 66.666%;
+  position: absolute;
+  top: 0;
+  left: 33.333%;
+  bottom: 0;
+  right: 0;
+}
+.cover img {
+  height: 100%;
+  object-fit: cover;
+}
+.retro .description {
+  float: left;
+  width: 33.333%;
+  left: 33.333%;
+}
+.retro .cover {
+  float: right;
+  width: 33.333%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.cover img {
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+}
+.retro-img {
+  float: right;
+  width: 33.333%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.shop-images ul {
+  float: left;
+  width: 33.333%;
+}
+.generation .container div {
+  padding: 100px 0;
+}
+.subscribe .container {
+  background-color: #fff;
+}
+
+
+.input-text {
+  padding: 0 0 0 25px;
+  width: 300px;
+  height: 69px;
+}
+.submit-button {
+  padding: 17px 44px 22px 44px;
+  font-size: 23px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+@media only screen and (min-width:1024px) {
+  .article li.description div {
+    padding: 25px 45px;
+  }
+}
+@media only screen and (min-width:1140px) {
+  .article li.description div {
+    padding: 40px 60px;
+  }
+}
+@media only screen and (min-width:1280px) {
+  .article li.description div {
+    padding: 55px 65px;
+  }
+}
+@media only screen and (min-width:1366px) {
+  .article li.description div {
+    padding: 74px 65px;
+  }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.container:before,
+.container:after,
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.container:after,
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.container,
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
